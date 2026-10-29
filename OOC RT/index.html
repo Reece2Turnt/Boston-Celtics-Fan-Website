@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta name="description" content="This is my description"> 
+  <meta name="author" content="Reece Thompson">
+  <meta name="keywords" content="Reece Thompson, Jayson Tatum, Celtics, Boston">
+  <!-- Open Graph -->
+<meta property="og:title" content="W3Schools Online Web Tutorials">
+<meta property="og:description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.">
+<meta property="og:image" content="https://www.w3schools.com/images/w3schools_logo_436_2.png">
+<meta property="og:url" content="https://www.w3schools.com">
+<meta property="og:type" content="website">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="W3Schools Online Web Tutorials">
+<meta name="twitter:description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.">
+<meta name="twitter:image" content="https://www.w3schools.com/images/w3schools_logo_436_2.png">
+  <title> Boston Celtics Fan Website </title>
+
+  <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+  <header>
+   <div class="header-inner">
+    <h1>
+     Boston Celtics
+    </h1>
+    <nav aria-label="Main navigation">
+     <button class="active" data-tab="home" type="button">
+      Home
+     </button>
+     <button data-tab="schedule" type="button">
+      Schedule
+     </button>
+     <button data-tab="roster" type="button">
+      Roster
+     </button>
+    </nav>
+   </div>
+  </header>
+  <section class="panel active" id="home">
+   <section class="hero">
+    <div class="hero-inner">
+     <div>
+      <div class="eyebrow">
+       Boston Celtics Fan Page
+      </div>
+      <h2>
+       Green runs deep.
+       <br/>
+       Championships matter.
+      </h2>
+      <p>
+       Welcome to the home of the 18-time world champions! Find team news, schedule information, and roster details in one place.
+      </p>
+      <button class="button" data-goto="schedule">
+       Explore Schedule
+      </button>
+     </div>
+     <div>
+      <img alt="Jayson Tatum holding the Boston Celtics championship trophy" class="hero-photo" src="TatumandTrophy.jpg"/>
+     </div>
+    </div>
+   </section>
+   <main>
+    <h2 class="section-heading">
+     Latest Team News
+    </h2>
+    <p class="muted">
+     Your starting point for Celtics updates and game-day conversation.
+    </p>
+    <div class="cards">
+     <article class="card">
+      <h3>
+       Most Recent Game
+      </h3>
+      <p>
+       Score from your original homepage:
+      </p>
+      <div class="score">
+       Celtics 125 &mdash; Nets 124 (Tatum Game Winner at the buzzer!!!)
+      </div>
+      <br/>
+      <button class="button" onclick="alert('Celtics: 125   Nets: 124')">
+       View Score
+      </button>
+     </article>
+     <article class="card">
+      <h3>
+       Schedule
+      </h3>
+      <p>
+       Explore the 2026&ndash;27 home schedule section.
+      </p>
+      <button class="button" data-goto="schedule">
+       View Schedule
+      </button>
+     </article>
+     <article class="card">
+      <h3>
+       Roster
+      </h3>
+      <p>
+       Meet the players listed on your roster page.
+      </p>
+      <button class="button" data-goto="roster">
+       View Roster
+      </button>
+     </article>
+    </div>
+   </main>
+  </section>
+  <section class="panel" id="schedule">
+   <section class="hero">
+    <div class="hero-inner" style="grid-template-columns:1fr">
+     <div>
+      <div class="eyebrow">
+       Game day starts here
+      </div>
+      <h2>
+       2026&ndash;27 Celtics Schedule
+      </h2>
+      <p>
+       Home games from the schedule you provided. All listed times are Eastern Time and may change.
+      </p>
+     </div>
+    </div>
+   </section>
+   <main>
+    <h2 class="section-heading">
+     2026&ndash;2027 Home Schedule
+    </h2>
+    <p class="muted">
+     Browse the listed home games month by month.
+    </p>
+    <div class="schedule-grid">
+     <article class="schedule-card">
+      <h3>
+       October 2026
+      </h3>
+      <ul>
+       <li>
+        Oct. 23 &mdash; New York Knicks &mdash; 7:00 PM
+       </li>
+       <li>
+        Oct. 26 &mdash; Chicago Bulls &mdash; 7:30 PM
+       </li>
+       <li>
+        Oct. 27 &mdash; Brooklyn Nets &mdash; 7:30 PM
+       </li>
+       <li>
+        Oct. 30 &mdash; Chicago Bulls &mdash; 7:30 PM
+       </li>
+      </ul>
+     </article>
+     <article class="schedule-card">
+      <h3>
+       November 2026
+      </h3>
+      <ul>
+       <li>
+        Nov. 4 &mdash; Milwaukee Bucks &mdash; 7:30 PM
+       </li>
+       <li>
+        Nov. 15 &mdash; Dallas Mavericks &mdash; 6:00 PM
+       </li>
+       <li>
+        Nov. 27 &mdash; Atlanta Hawks &mdash; 8:00 PM
+       </li>
+      </ul>
+     </article>
+     <article class="schedule-card">
+      <h3>
+       December 2026
+      </h3>
+      <ul>
+       <li>
+        Dec. 2 &mdash; Charlotte Hornets &mdash; 7:30 PM
+       </li>
+       <li>
+        Dec. 14 &mdash; Washington Wizards &mdash; 7:30 PM
+       </li>
+       <li>
+        Dec. 25 &mdash; Miami Heat &mdash; 2:30 PM
+       </li>
+       <li>
+        Dec. 28 &mdash; Cleveland Cavaliers &mdash; 8:00 PM
+       </li>
+      </ul>
+     </article>
+     <article class="schedule-card">
+      <h3>
+       January 2027
+      </h3>
+      <ul>
+       <li>
+        Jan. 11 &mdash; Houston Rockets &mdash; 7:30 PM
+       </li>
+       <li>
+        Jan. 13 &mdash; New York Knicks &mdash; 7:00 PM
+       </li>
+       <li>
+        Jan. 16 &mdash; Brooklyn Nets &mdash; 7:00 PM
+       </li>
+       <li>
+        Jan. 27 &mdash; LA Clippers &mdash; 7:30 PM
+       </li>
+       <li>
+        Jan. 29 &mdash; Phoenix Suns &mdash; 7:30 PM
+       </li>
+      </ul>
+     </article>
+     <article class="schedule-card">
+      <h3>
+       February 2027
+      </h3>
+      <ul>
+       <li>
+        Feb. 2 &mdash; Los Angeles Lakers &mdash; 8:00 PM
+       </li>
+       <li>
+        Feb. 9 &mdash; Denver Nuggets &mdash; 7:30 PM
+       </li>
+       <li>
+        Feb. 10 &mdash; Golden State Warriors &mdash; 7:30 PM
+       </li>
+       <li>
+        Feb. 12 &mdash; Minnesota Timberwolves &mdash; 8:00 PM
+       </li>
+      </ul>
+     </article>
+     <article class="schedule-card">
+      <h3>
+       March 2027
+      </h3>
+      <ul>
+       <li>
+        Mar. 7 &mdash; Philadelphia 76ers &mdash; 1:00 PM
+       </li>
+       <li>
+        Mar. 11 &mdash; Memphis Grizzlies &mdash; 7:30 PM
+       </li>
+       <li>
+        Mar. 12 &mdash; Oklahoma City Thunder &mdash; 7:30 PM
+       </li>
+       <li>
+        Mar. 24 &mdash; San Antonio Spurs &mdash; 7:30 PM
+       </li>
+      </ul>
+     </article>
+     <article class="schedule-card">
+      <h3>
+       April 2027
+      </h3>
+      <ul>
+       <li>
+        Apr. 2 &mdash; Miami Heat &mdash; 7:30 PM
+       </li>
+       <li>
+        Apr. 11 &mdash; Milwaukee Bucks &mdash; 6:00 PM
+       </li>
+      </ul>
+     </article>
+    </div>
+    <div class="callout">
+     <h3>
+      Official Celtics Schedule
+     </h3>
+     <p>
+      Check schedule updates, tickets, and broadcast information on the official Boston Celtics website.
+     </p>
+     <a class="button" href="https://www.nba.com/celtics/schedule" rel="noopener noreferrer" target="_blank">
+      View Official Schedule
+     </a>
+    </div>
+   </main>
+  </section>
+  <section class="panel" id="roster">
+   <section class="hero">
+    <div class="hero-inner" style="grid-template-columns:1fr">
+     <div>
+      <div class="eyebrow">
+       Meet the team
+      </div>
+      <h2>
+       2026&ndash;27 Boston Celtics Roster
+      </h2>
+      <p>
+       Meet the players listed on your roster page, organized by position.
+      </p>
+     </div>
+    </div>
+   </section>
+   <main>
+    <p class="muted">
+     Players are grouped by position for easier browsing.
+    </p>
+    <div class="roster-grid">
+     <section class="roster-card">
+      <h3>
+       Guards
+      </h3>
+      <ul>
+       <li>
+        <span class="number">
+         #22
+        </span>
+        Devin Carter
+       </li>
+       <li>
+        <span class="number">
+         #45
+        </span>
+        Mike Conley
+       </li>
+       <li>
+        <span class="number">
+         #23
+        </span>
+        Hayden Gray
+       </li>
+       <li>
+        <span class="number">
+         #8
+        </span>
+        Ron Harper Jr.
+       </li>
+       <li>
+        <span class="number">
+         #11
+        </span>
+        Payton Pritchard
+       </li>
+       <li>
+        <span class="number">
+         #29
+        </span>
+        Milos Uzan
+       </li>
+       <li>
+        <span class="number">
+         #9
+        </span>
+        Derrick White
+       </li>
+      </ul>
+     </section>
+     <section class="roster-card">
+      <h3>
+       Forwards
+      </h3>
+      <ul>
+       <li>
+        <span class="number">
+         #12
+        </span>
+        Chris Cenac Jr.
+       </li>
+       <li>
+        Tucker DeVries
+       </li>
+       <li>
+        <span class="number">
+         #13
+        </span>
+        Paul George
+       </li>
+       <li>
+        <span class="number">
+         #28
+        </span>
+        Hugo Gonzalez
+       </li>
+       <li>
+        <span class="number">
+         #30
+        </span>
+        Sam Hauser
+       </li>
+       <li>
+        <span class="number">
+         #41
+        </span>
+        Gabe McGlothan
+       </li>
+       <li>
+        <span class="number">
+         #20
+        </span>
+        Dillon Mitchell
+       </li>
+       <li>
+        <span class="number">
+         #0
+        </span>
+        Jayson Tatum
+       </li>
+       <li>
+        <span class="number">
+         #27
+        </span>
+        Jordan Walsh
+       </li>
+       <li>
+        <span class="number">
+         #77
+        </span>
+        Amari Williams
+       </li>
+      </ul>
+     </section>
+     <section class="roster-card">
+      <h3>
+       Centers
+      </h3>
+      <ul>
+       <li>
+        <span class="number">
+         #52
+        </span>
+        Luka Garza
+       </li>
+       <li>
+        <span class="number">
+         #88
+        </span>
+        Neemias Queta
+       </li>
+       <li>
+        <span class="number">
+         #4
+        </span>
+        Mitchell Robinson
+       </li>
+      </ul>
+     </section>
+    </div>
+    <div class="callout">
+     <h3>
+      Additional Roster Information
+     </h3>
+     <p>
+      Some players may be assigned two-way contracts. For the most up-to-date information, check the official Celtics roster.
+     </p>
+     <a class="button" href="https://www.nba.com/celtics/mediaday" rel="noopener noreferrer" target="_blank">
+      View Official Roster
+     </a>
+    </div>
+   </main>
+  </section>
+  <footer>
+   <p>
+    &copy; 2026 Home of the 18-Time World Champions
+   </p>
+   <a data-goto="home" href="#">
+    Back to Home
+   </a>
+  </footer>
+  <script>
+   // Show the section that matches the button the visitor clicks.
+function showTab(tabName) {
+    var panels = document.querySelectorAll('.panel');
+    var navButtons = document.querySelectorAll('nav button[data-tab]');
+
+    panels.forEach(function (panel) {
+        panel.classList.toggle('active', panel.id === tabName);
+    });
+
+    navButtons.forEach(function (button) {
+        button.classList.toggle('active', button.dataset.tab === tabName);
+    });
+
+    window.scrollTo(0, 0);
+}
+
+// Main navigation buttons.
+document.querySelectorAll('nav button[data-tab]').forEach(function (button) {
+    button.addEventListener('click', function () {
+        showTab(button.dataset.tab);
+    });
+});
+
+// Buttons and links that take visitors to another section.
+document.querySelectorAll('[data-goto]').forEach(function (button) {
+    button.addEventListener('click', function (event) {
+        event.preventDefault();
+        showTab(button.dataset.goto);
+    });
+});
+  </script>
+ </body>
+</html>
